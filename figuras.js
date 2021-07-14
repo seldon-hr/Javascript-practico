@@ -1,39 +1,21 @@
 //Square Code
 console.group('Square')
-// const ladoCuadrado = 5
-// console.log(`Los lados del cuadrado miden: ${ladoCuadrado}cm`)
 
 function perimetroCuadrado(lado) {
     return lado * 4
 } 
 
-// console.log(`El perímetro del cuadrado es ${perimetroCuadrado}cm`)
-
-// const areaCuadrado = ladoCuadrado * ladoCuadrado
 function areaCuadrado(lado) {
     return lado * lado
 }
-// console.log(`El área del cuadrado es: ${areaCuadrado}cm^2`)
 console.groupEnd()
 
 //Triangle Code
 console.group('Triangle')
-// const sideTriangle1 = 6
-// const sideTriangle2 = 6
-// const baseTriangle = 4
-// const heightTriangle = 5.5
-
-// console.log(
-//     `Los lados del triángulo miden: 
-//     ${sideTriangle1}cm, 
-//     ${sideTriangle2}cm, 
-//     ${baseTriangle}cm`)
-// console.log(`El altura del triángulo es: ${heightTriangle}cm`)
 
 function perimetroTrinagle (side1, side2, base) {
     return side1 + side2 + base
 }
-
 
 function areaTriangle(base, height) {
     return (base * height) / 2
@@ -63,3 +45,22 @@ function areaCircle (radio) {
 }
 
 console.groupEnd()
+
+//Start connect to HTML
+
+function calcularPerimetroSquare() {
+    const input = document.getElementById("InputSquare")
+    const value = input.value //Recibimos solo el valor que pedimos arriba.
+
+    const perimetro = perimetroCuadrado(value)
+    alert(perimetro)
+}
+
+function calculaAreaSquare() {
+    const input = document.getElementById("InputSquare")
+    const value = input.value 
+
+    const area = areaCuadrado(value)
+    alert(area)
+}
+
