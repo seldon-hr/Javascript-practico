@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuaras geométricas</title>
+    <link rel="stylesheet" href="figuras.css">
 </head>
 <body>
     <header>
         <h1>
-            Figuras geométricas
+            Welcome to this calculator about geometric figures
         </h1>
         <p>
             Taller #1
@@ -17,15 +18,52 @@
     </header>
     <section>
         <h2>
-            Calcula el área de un formulario
+            Square
         </h2>
         <form action="">
             <label for="InputSquare">
-                Ingresa el lado del cuadrado
+                Square Side
             </label>
             <input id="InputSquare" type="number">
-            <button type="button" onclick="calcularPerimetroSquare()">Calcular el perímetro</button>
-            <button type="button" onclick="calculaAreaSquare()">Calcula el área</button>
+            <button type="button" onclick="calcularPerimetroSquare()">Calculate the perimeter</button>
+            <button type="button" onclick="calculaAreaSquare()
+            ">Calculete the area</button>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Triangle
+        </h2>
+        <form action="">
+            <label for="InputSquare">
+                Triangle Side 1
+            </label>
+            <input id="InputSquare" type="number">
+            <label for="InputSquare">
+                Triangle Side 2
+            </label>
+            <input id="InputSquare" type="number">
+            <label for="InputSquare">
+                Triangle Base
+            </label>
+            <input id="InputSquare" type="number">
+            <button type="button" onclick="calcularPerimetroSquare()">Calculate the perimeter</button>
+            <button type="button" onclick="calculaAreaSquare()
+            ">Calculete the area</button>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Circle
+        </h2>
+        <form action="">
+            <label for="InputSquare">
+                Radio
+            </label>
+            <input id="InputSquare" type="number">
+            <button type="button" onclick="calcularPerimetroSquare()">Calculate the perimeter</button>
+            <button type="button" onclick="calculaAreaSquare()
+            ">Calculete the area</button>
         </form>
     </section>
     <script src="./figuras.js"></script>
