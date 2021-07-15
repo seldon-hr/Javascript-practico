@@ -48,6 +48,8 @@ console.groupEnd()
 
 //Start connect to HTML
 
+//Square
+
 function calcularPerimetroSquare() {
     const input = document.getElementById("InputSquare")
     const value = input.value //Recibimos solo el valor que pedimos arriba.
@@ -64,3 +66,48 @@ function calculaAreaSquare() {
     alert(area)
 }
 
+//Triangle
+
+function calcularPerimetroTriangle() {
+    const inputSide1 = document.getElementById("InputSTriangleSide1")
+    const valueSide1 = parseInt(inputSide1.value)
+
+    const inputSide2 = document.getElementById("InputSTriangleSide2")
+    const valueSide2 = parseInt(inputSide2.value)
+
+    const inputBase = document.getElementById("InputTriangleBase")
+    const valueBase = parseInt(inputBase.value)
+
+    const perimetro = perimetroTrinagle(valueSide1, valueSide2, valueBase)
+    alert(perimetro)
+}
+
+function calculaAreaTriangle() {
+
+    const inputHeight = document.getElementById("InputTriangleHeight")
+    const valueHeight = parseInt(inputHeight.value)
+
+    const inputBase = document.getElementById("InputTriangleBase")
+    const valueBase = parseInt(inputBase.value)
+
+    const area =  areaTriangle(valueBase, valueHeight)
+    alert(area)
+}
+
+//Square
+
+function calcularPerimetroCircle() {
+    const input = document.getElementById("InputCircle")
+    const value = input.value
+
+    const perimetro = perimetroCircle(value)
+    alert(perimetro)
+}
+
+function calculaAreaSquareCircle() {
+    const input = document.getElementById("InputCircle")
+    const value = input.value
+
+    const area = areaCircle(value)
+    alert(area)
+}

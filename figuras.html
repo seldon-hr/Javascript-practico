@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuaras geométricas</title>
     <link rel="stylesheet" href="figuras.css">
+    <link rel="icon"  href="https://image.flaticon.com/icons/png/512/392/392031.png" sizes="any">
 </head>
 <body>
     <header>
@@ -16,56 +17,73 @@
             Taller #1
         </p>
     </header>
+    <main>
+    
     <section>
         <h2>
             Square
         </h2>
+        <figure>
+            <img src="https://image.flaticon.com/icons/png/512/545/545666.png" class="square">
+        </figure>
         <form action="">
             <label for="InputSquare">
                 Square Side
             </label>
             <input id="InputSquare" type="number">
-            <button type="button" onclick="calcularPerimetroSquare()">Calculate the perimeter</button>
+            <button type="button" onclick="calcularPerimetroSquare()">Calculate perimeter</button>
             <button type="button" onclick="calculaAreaSquare()
-            ">Calculete the area</button>
+            ">Calculete area</button>
         </form>
     </section>
     <section>
         <h2>
             Triangle
         </h2>
+        <figure>
+            <img src="https://image.flaticon.com/icons/png/512/481/481099.png" class="square">
+        </figure>
         <form action="">
-            <label for="InputSquare">
+            <label for="InputSTriangleSide1">
                 Triangle Side 1
             </label>
-            <input id="InputSquare" type="number">
-            <label for="InputSquare">
+            <input id="InputSTriangleSide1" type="number">
+            <label for="InputSTriangleSide2">
                 Triangle Side 2
             </label>
-            <input id="InputSquare" type="number">
-            <label for="InputSquare">
+            <input id="InputSTriangleSide2" type="number">
+            <label for="InputTriangleBase">
                 Triangle Base
             </label>
-            <input id="InputSquare" type="number">
-            <button type="button" onclick="calcularPerimetroSquare()">Calculate the perimeter</button>
-            <button type="button" onclick="calculaAreaSquare()
-            ">Calculete the area</button>
+            <input id="InputTriangleBase" type="number">
+            <label for="InputTriangleHeight">
+                Triangle Base
+            </label>
+            <input id="InputTriangleHeight" type="number">
+            <button type="button" onclick="calcularPerimetroTriangle()">Calculate perimeter</button>
+            <button type="button" onclick="calculaAreaTriangle()
+            ">Calculete area</button>
         </form>
     </section>
     <section>
         <h2>
             Circle
         </h2>
+        <figure>
+            <img src="https://image.flaticon.com/icons/png/512/481/481078.png" class="square">
+        </figure>
         <form action="">
-            <label for="InputSquare">
+            <label for="InputCircle">
                 Radio
             </label>
-            <input id="InputSquare" type="number">
-            <button type="button" onclick="calcularPerimetroSquare()">Calculate the perimeter</button>
-            <button type="button" onclick="calculaAreaSquare()
-            ">Calculete the area</button>
+            <input id="InputCircle" type="number">
+            <button type="button" onclick="calcularPerimetroCircle()">Calculate perimeter</button>
+            <button type="button" onclick="calculaAreaSquareCircle()
+            ">Calculete area</button>
         </form>
     </section>
+        
+</main>
     <script src="./figuras.js"></script>
 </body>
 </html>

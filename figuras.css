@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #BBADFF;
+    color: #4f525a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background-color: #393947f5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+h1{
+    padding: 15px;
+    font-size: 3rem;    
+    justify-content: center;
+    display: flex;
+}
+
+header p{
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+button{
+    background-color: #DAB6FC;
+    border: 0;
+    padding: 5px;
+    border-radius: 5%;
+    color: #4e4e7e;
+}
+
+input{
+    border: 0;
+    margin: 1px;
+    height: 25px;
+    border-radius: 5%;
+    background-color: #f3f4fd7e;
+}
+
+.square{
+    height: 50px;
+    margin: 10px;
+}
+
+.label{
+    padding: 5px;
+
+}
+
+section{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    width: 60%;
+    padding: 30px;
+}
+
+section form{
+    flex-direction: column;
+    align-items: stretch;
+}
