@@ -21,6 +21,17 @@ function areaTriangle(base, height) {
     return (base * height) / 2
 }
 
+//Isoceles
+
+function heightTriangle(side1, side2, base) {
+    if(side1 === side2 && side1 != base){
+        return height = Math.sqrt((side1**2) - (base**2) / 4)
+    }
+}
+
+
+
+
 console.groupEnd()
 
 //Circle Code
@@ -92,6 +103,21 @@ function calculaAreaTriangle() {
 
     const area =  areaTriangle(valueBase, valueHeight)
     alert(area)
+}
+
+function calculaHeightTriangle() {
+
+    const inputSide1 = document.getElementById("InputSTriangleSide1")
+    const valueSide1 = parseInt(inputSide1.value)
+
+    const inputSide2 = document.getElementById("InputSTriangleSide2")
+    const valueSide2 = parseInt(inputSide2.value)
+
+    const inputBase = document.getElementById("InputTriangleBase")
+    const valueBase = parseInt(inputBase.value)
+
+    const height = heightTriangle(valueSide1, valueSide2, valueBase)
+    alert(height)
 }
 
 //Square
