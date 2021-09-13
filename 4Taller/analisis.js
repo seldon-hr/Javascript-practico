@@ -30,19 +30,19 @@ function calcularMediaAritmetica(list) {
 
 //Calculate Mediana
 function medianaSalarios(lista) {
-    const mitad = parseInt(lista.lenght / 2)
-
-    if(esPar(lista.lenght)){
-        const personaMitad = lista[mitad - 1]
-        const personaMitad2 = lista[mitad]
-
-        const mediana = calcularMediaAritmetica([personaMitad, personaMitad2])
-        return mediana
+    const mitad = parseInt(lista.length / 2)
+  
+    if (esPar(lista.length)) {
+      const personaMitad = lista[mitad - 1]
+      const personaMitad2 = lista[mitad]
+  
+      const mediana = calcularMediaAritmetica([personaMitad, personaMitad2])
+      return mediana
     } else {
-        const personaMitad = lista[mitad]
-        return personaMitad
+      const personaMitad = lista[mitad]
+      return personaMitad
     }
-}
+  }
 
 console.log(
     medianaSalarios(salariosColSorted)
