@@ -1,7 +1,7 @@
 //Data
 const salariosCol = colombia.map(
     function (persona) {
-        return persona.salario
+        return persona.salary
     }
 )
 
@@ -11,17 +11,17 @@ const salariosColSorted = salariosCol.sort(
     }
 )
 
-console.log(salariosCol)
+
 
 //Feautures Helpers
 function esPar(numero) {
     return (numero % 2 === 0)
 }
 
-function calcularMediaArimetica(list) {
+function calcularMediaAritmetica(list) {
     const sumaList = list.reduce(
         (acum = 0, valor) => (acum + valor)
-        ) //Suma con método reduce.
+        ) 
 
     const promedioList = sumaList /list.length
     
@@ -36,7 +36,7 @@ function medianaSalarios(lista) {
         const personaMitad = lista[mitad - 1]
         const personaMitad2 = lista[mitad]
 
-        const mediana = calcularMediaArimetica(personaMitad, personaMitad2)
+        const mediana = calcularMediaAritmetica([personaMitad, personaMitad2])
         return mediana
     } else {
         const personaMitad = lista[mitad]
