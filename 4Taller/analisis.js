@@ -1,18 +1,3 @@
-//Data
-const salariosCol = colombia.map(
-    function (persona) {
-        return persona.salary
-    }
-)
-
-const salariosColSorted = salariosCol.sort(
-    function (salaryA, salaryB) {
-        return salaryA -salaryB
-    }
-)
-
-
-
 //Feautures Helpers
 function esPar(numero) {
     return (numero % 2 === 0)
@@ -44,6 +29,39 @@ function medianaSalarios(lista) {
     }
   }
 
-console.log(
-    medianaSalarios(salariosColSorted)
+
+//Mediana General
+const salarios = colombia.map(
+    function (persona) {
+        return persona.salary
+    }
 )
+
+const salariosSorted = salarios.sort(
+    function (salaryA, salaryB) {
+        return salaryA -salaryB
+    }
+)
+
+
+const medianaGeneral = medianaSalarios(salariosSorted)
+
+
+//Meidana del top 10%
+
+
+const spliceStart = (salariosSorted.length * 90) / 100
+const spliceCount = salariosSorted.length - spliceStart
+
+const salariosTop10 = salariosSorted.splice(
+    spliceStart,
+    spliceCount,
+)
+
+const medianaTop10 = medianaSalarios(salariosTop10)
+
+
+console.log({
+    medianaGeneral,
+    medianaTop10,
+})
